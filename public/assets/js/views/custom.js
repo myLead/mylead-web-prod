@@ -28,5 +28,19 @@ $(document).ready(function () {
     }
   })
 
-
 });
+
+/*
+function validar()
+  {
+     var Senha1 = formulario.InputSenha.Value
+    var Senha2 = formulario.InputConfirmaSenha.Value;
+      if(Senha1 == Senha2){
+          alert('Senha1');
+      }else{
+        alert('Senha Errada');
+    }
+
+}
+*/ 
+

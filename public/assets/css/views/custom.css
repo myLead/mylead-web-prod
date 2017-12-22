@@ -95,6 +95,13 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
 	padding: 15px 0;
 	text-align: center;
 }
+
+
+
+
+
+
+
 .content{
     overflow: hidden;
   }
@@ -119,7 +126,8 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
   .navbar-default .navbar-collapse{
     border: transparent;
   }
-  #navbar .navbar-left li a{
+  #navbar .navbar-left li a,
+  #navbar .navbar-right li a{
     font-size: 10px;
     letter-spacing:2px;
     color: #000;
@@ -134,20 +142,14 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
   #navbar .navbar-left li a:hover{
       color: #c4c4c4;
   }
-  #navbar .navbar-right li{
-    position: relative;
-  }
-  #navbar .navbar-right li a{
-    font-size: 40px;
-    color: #333;
-    top: -10px;
-    left: -40px;
-    position: absolute;
-  }
-  #navbar .navbar-right li a:hover{
+  #navbar .navbar-right li a:hover {
     background-color: #333;
     color: #fff;
   }
+  #navbar .navbar-right li{
+    position: relative;
+  }
+  
   #navbar .navbar-brand svg{
     margin-top:-10px;
     height:50px
@@ -202,8 +204,15 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
     transform: rotate(-135deg);
   }
   @media (max-width: 48em) {
-    #navbar .navbar-right{
-      display: none;
+    #navbar .navbar-right li a {
+      text-align: center;
+      display: block;
+      background-color: #333;
+      color: #fff;
+    }
+    #navbar .navbar-right li a:hover {
+      background-color: #333;
+      color: #fff;
     }
     #navbar .navbar-left{
       text-align: center;
@@ -236,6 +245,9 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
     font-size: 50px;
   }
   @media (max-width: 48em) {
+    #banner {
+      padding: 20% 0% 10% 0%;
+    }
     #banner .text{
       padding: 0px 10px;
     }
@@ -317,7 +329,25 @@ body, html { font-size: 100%; padding: 0; margin: 0;}
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
+  }
+#planos{  
+  }#planos h1{
+      font-family: 'Anton', sans-serif;
+      color: #333;
+      font-weight: 800;
+      margin: 80px 0px 40px 0px;
+      text-transform: uppercase;
+  }#planos p{
+    font-weight: 300;
+    color: #333;
+    font-size: 20px;
 }
+
+
+
+
+
+
 
 .box-shadow {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.05), 0 4px 8px 0 rgba(0,0,0,.05);
