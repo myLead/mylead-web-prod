@@ -150,6 +150,8 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dashboard_dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/dashboard/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__authguard_guard__ = __webpack_require__("../../../../../src/app/authguard.guard.ts");
+
 
 
 
@@ -160,7 +162,7 @@ var APP_ROUTS = [
     },
     {
         path: 'dashboard',
-        //canActivate: [AuthguardGuard],
+        canActivate: [__WEBPACK_IMPORTED_MODULE_3__authguard_guard__["a" /* AuthguardGuard */]],
         component: __WEBPACK_IMPORTED_MODULE_1__dashboard_dashboard_dashboard_component__["a" /* DashboardComponent */]
     }
 ];
